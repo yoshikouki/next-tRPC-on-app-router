@@ -2,7 +2,7 @@ import { publicProcedure, router } from "../trpc";
 
 import { z } from "zod";
 
-export const createPost = publicProcedure
+const createPost = publicProcedure
   .input(
     z.object({
       title: z.string(),
